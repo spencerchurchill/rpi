@@ -1,0 +1,4 @@
+pi:
+raspivid -t 0 -w 640 -h 480 -ih -fps 20 -o - | nc --l 2222
+watching computer:
+mplayer -fps 200 -demuxer h264es ffmpeg://tcp://pineapple:2222

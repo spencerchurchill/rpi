@@ -1,0 +1,16 @@
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:8001            0.0.0.0:*               LISTEN      1205/python     
+tcp        0      0 0.0.0.0:4200            0.0.0.0:*               LISTEN      1125/shellinaboxd
+tcp        0      0 0.0.0.0:139             0.0.0.0:*               LISTEN      1825/smbd       
+tcp        0      0 0.0.0.0:5901            0.0.0.0:*               LISTEN      1148/Xtightvnc  
+tcp        0      0 0.0.0.0:6001            0.0.0.0:*               LISTEN      1148/Xtightvnc  
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1038/sshd       
+tcp        0      0 0.0.0.0:1880            0.0.0.0:*               LISTEN      426/node-red    
+tcp        0      0 127.0.0.1:6010          0.0.0.0:*               LISTEN      6229/0          
+tcp        0      0 0.0.0.0:445             0.0.0.0:*               LISTEN      1825/smbd       
+tcp6       0      0 :::139                  :::*                    LISTEN      1825/smbd       
+tcp6       0      0 :::80                   :::*                    LISTEN      1154/apache2    
+tcp6       0      0 :::22                   :::*                    LISTEN      1038/sshd       
+tcp6       0      0 ::1:6010                :::*                    LISTEN      6229/0          
+tcp6       0      0 :::445                  :::*                    LISTEN      1825/smbd       

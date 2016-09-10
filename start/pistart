@@ -1,0 +1,23 @@
+sudo chmod +x off
+sudo mv off /usr/bin/
+sudo apt-get update
+sudo apt-get upgrade
+echo expand filesystem
+echo change user password
+echo enable boot to terminal
+echo enable camera
+echo advanced options
+echo hostname pineapple
+echo memory split = 64
+echo ssh enable
+echo ic2 enable
+echo serial enable
+echo update
+echo finish
+echo do not restart
+sleep 10
+sudo raspi-config
+sudo rpi-update
+wget https://github.com/samjabrahams/tensorflow-on-raspberry-pi/raw/master/bin/tensorflow-0.9.0-cp27-none-linux_armv7l.whl
+sudo apt-get install python-pip python-setuptools python-dev build-essential netcat htop ipython-notebook
+sudo pip install tensorflow-0.9.0-cp27-none-linux_armv7l.whl

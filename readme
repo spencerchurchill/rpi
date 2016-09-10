@@ -1,0 +1,24 @@
+read this
+
+as usual (first step):
+
+	sudo sh /home/pi/di_update/Raspbian_For_Robots/update_master.sh
+	sudo update
+	sudo upgrade
+	sudo rpi-upgrade
+	sudo reboot
+
+to get started open the rpi folder then (second step):
+
+	cd start/
+	chmod +x off updatepi
+	sudo cp off updatepi /usr/bin/
+	sudo cp index.php /var/www/html/
+	sudo apt-get install python-pip python-setuptools python-dev build-essential netcat htop gparted geany piclone usb-modeswitch python-pigpio
+	wget https://github.com/samjabrahams/tensorflow-on-raspberry-pi/raw/master/bin/tensorflow-0.9.0-cp27-none-linux_armv7l.whl
+	sudo pip install tensorflow-0.9.0-cp27-none-linux_armv7l.whl
+
+later, set the desktop and menu icon to the pineapple theme in rpi/start/pics/
+
+	sudo mkdir /tmp/mnist_logs
+	add “sudo tensorboard --logdir /tmp/mnist_logs --port 6007 &” to the end on /etc/rc.local
